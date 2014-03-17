@@ -704,7 +704,7 @@ class Taggable_mcp
 	{
 		$this->data['title'] = lang($title);
 		
-		$this->ee->cp->set_variable('cp_page_title', lang($title)); 
+		$this->ee->view->cp_page_title = lang($title); 
 		$this->ee->cp->set_breadcrumb(TAGGABLE_URL, "Taggable");
 	}
 	
